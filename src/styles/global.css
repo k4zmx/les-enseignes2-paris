@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --radius-*: initial;
+  --radius-none: 0;
+}

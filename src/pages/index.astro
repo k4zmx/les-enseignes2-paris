@@ -1,0 +1,2159 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Mat.enseigne — Enseignes & Façades Paris">
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero">
+
+    <!-- Full-bleed background image -->
+    <img src="/herobg.png" alt="" class="hero__bg" aria-hidden="true" />
+
+    <!-- Dark gradient overlay -->
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+
+      <!-- Eyebrow -->
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-dot"></span>
+        Fabricant · Paris &amp; Île-de-France
+      </p>
+
+      <!-- Main title -->
+      <h1 class="hero__title">
+        Une vitrine négligée, c'est un client<br/>
+        qui passe <em>sans s'arrêter</em>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero__sub">
+        Depuis 2008, nous fabriquons et posons des enseignes pour tous types de commerces
+        — du kebab au salon de coiffure, en passant par les boutiques de luxe.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero__actions">
+        <a href="tel:+33605894411" class="hero__btn hero__btn--primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+              19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11
+              2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45
+              2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45
+              c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Appeler maintenant
+        </a>
+        <a href="/services" class="hero__btn hero__btn--ghost">
+          Nos réalisations
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">15+</span>
+          <span class="hero__stat-label">ans d'expérience</span>
+        </div>
+        <div class="hero__stat-sep"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">100+</span>
+          <span class="hero__stat-label">commerces habillés</span>
+        </div>
+        <div class="hero__stat-sep"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">24h</span>
+          <span class="hero__stat-label">délai de réponse</span>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-label">Découvrir</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TRUST BAR
+  ══════════════════════════════════════════ -->
+  <div class="trust-bar">
+    <div class="trust-bar__wrap">
+      <div class="trust-bar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="var(--gold)" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Fabrication locale — atelier en IDF
+      </div>
+      <span class="trust-bar__sep"></span>
+      <div class="trust-bar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="var(--gold)" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Pose incluse, aucun sous-traitant
+      </div>
+      <span class="trust-bar__sep"></span>
+      <div class="trust-bar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="var(--gold)" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Devis gratuit sous 24h
+      </div>
+      <span class="trust-bar__sep"></span>
+      <div class="trust-bar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="var(--gold)" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Tous types de commerces
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="services__wrap">
+
+      <div class="services__header reveal">
+        <p class="svc-label">
+          <span class="svc-label-line"></span>
+          Nos services
+          <span class="svc-label-line"></span>
+        </p>
+        <h2 class="svc-title">Ce que nous fabriquons pour vous</h2>
+      </div>
+
+      <!-- ── ROW 1: text left · image right ── -->
+      <div class="svc-row">
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">01</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Enseigne</p>
+          <h3 class="svc-row__heading">Enseignes lumineuses &amp; drapeaux</h3>
+          <p class="svc-row__desc">
+            Des enseignes LED, caissons lumineux et drapeaux publicitaires qui
+            attirent l'œil de jour comme de nuit — fabriqués sur mesure dans notre atelier.
+          </p>
+          <ul class="svc-row__details">
+            <li>Enseignes LED basse consommation</li>
+            <li>Caissons lumineux rétroéclairés</li>
+            <li>Enseignes drapeaux et oriflammes</li>
+            <li>Maintenance et dépannage inclus</li>
+          </ul>
+        </div>
+        <div class="svc-row__img slide-from-right">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/ig3.png"   alt="Enseignes lumineuses 1" class="svc-carousel__slide" />
+              <img src="/hold2.png" alt="Enseignes lumineuses 2" class="svc-carousel__slide" />
+              <img src="/ig1.png"   alt="Enseignes lumineuses 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 2: image left · text right ── -->
+      <div class="svc-row">
+        <div class="svc-row__img slide-from-left">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/storebanner.jpeg"  alt="Store banne 1" class="svc-carousel__slide active" />
+              <img src="/storebanner2.jpeg" alt="Store banne 2" class="svc-carousel__slide" />
+              <img src="/storebanner3.jpeg" alt="Store banne 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">02</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Store</p>
+          <h3 class="svc-row__heading">Stores bannes sur mesure</h3>
+          <p class="svc-row__desc">
+            Motorisés ou manuels, nos stores bannes protègent votre vitrine tout en
+            affirmant l'identité de votre commerce.
+          </p>
+          <ul class="svc-row__details">
+            <li>Stores bannes motorisés</li>
+            <li>Marquage et impression sur toile</li>
+            <li>Marquises et auvents</li>
+            <li>Entretien et remplacement de toile</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ── ROW 3: text left · image right ── -->
+      <div class="svc-row">
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">03</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Marquage</p>
+          <h3 class="svc-row__heading">Marquage adhésif</h3>
+          <p class="svc-row__desc">
+            Vitrines, véhicules, panneaux publicitaires — le marquage adhésif haute
+            qualité qui fait parler de vous partout où vous allez.
+          </p>
+          <ul class="svc-row__details">
+            <li>Covering et lettrage véhicules</li>
+            <li>Vitrophanie et décoration vitrine</li>
+            <li>Panneaux et supports publicitaires</li>
+            <li>Découpe numérique sur mesure</li>
+          </ul>
+        </div>
+        <div class="svc-row__img slide-from-right">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/cat3.jpeg"    alt="Marquage adhésif 1" class="svc-carousel__slide active" />
+              <img src="/abtus.jpeg"   alt="Marquage adhésif 2" class="svc-carousel__slide" />
+              <img src="/cat32.jpeg"   alt="Marquage adhésif 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 4: image left · text right ── -->
+      <div class="svc-row svc-row--last">
+        <div class="svc-row__img slide-from-left">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/cat1.jpeg"  alt="Création sur mesure 1" class="svc-carousel__slide" />
+              <img src="/cat41.png"  alt="Création sur mesure 2" class="svc-carousel__slide" />
+              <img src="/cat42.png"  alt="Création sur mesure 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">04</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Sur mesure</p>
+          <h3 class="svc-row__heading">Création &amp; pose sur mesure</h3>
+          <p class="svc-row__desc">
+            De la conception à la pose, nous gérons l'intégralité de votre projet —
+            un seul interlocuteur, de la conception à la livraison.
+          </p>
+          <ul class="svc-row__details">
+            <li>Conception graphique incluse</li>
+            <li>Fabrication en atelier propre</li>
+            <li>Pose par notre équipe qualifiée</li>
+            <li>Accompagnement administratif</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BEFORE / AFTER
+  ══════════════════════════════════════════ -->
+  <section class="ba">
+    <div class="ba__header reveal">
+      <p class="ba__eyebrow"><span class="ba__eyebrow-dot"></span>Nos transformations</p>
+      <h2 class="ba__title">Avant <span class="ba__title-accent">&amp;</span> Après</h2>
+      <p class="ba__sub">La différence que nous faisons — en images.</p>
+    </div>
+
+    <div class="ba__grid">
+
+      <!-- Pair 1 — drag slider -->
+      <div class="bslider reveal">
+        <!-- After (base layer, always full width) -->
+        <div class="bslider__layer bslider__layer--after">
+          <img src="/after.jpeg" alt="Après" />
+          <span class="bslider__tag bslider__tag--after">Après</span>
+        </div>
+        <!-- Before (clipped layer on top) -->
+        <div class="bslider__layer bslider__layer--before">
+          <img src="/before.jpeg" alt="Avant" />
+          <span class="bslider__tag">Avant</span>
+        </div>
+        <!-- Drag handle -->
+        <div class="bslider__handle">
+          <div class="bslider__btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"/>
+              <polyline points="9 18 3 12 9 6" transform="rotate(180,12,12)"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Hint -->
+        <p class="bslider__hint">Glissez pour comparer</p>
+      </div>
+
+      <!-- Pair 2 — drag slider -->
+      <div class="bslider reveal">
+        <div class="bslider__layer bslider__layer--after">
+          <img src="/after1.png" alt="Après 2" />
+          <span class="bslider__tag bslider__tag--after">Après</span>
+        </div>
+        <div class="bslider__layer bslider__layer--before">
+          <img src="/before1.png" alt="Avant 2" />
+          <span class="bslider__tag">Avant</span>
+        </div>
+        <div class="bslider__handle">
+          <div class="bslider__btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"/>
+              <polyline points="9 18 3 12 9 6" transform="rotate(180,12,12)"/>
+            </svg>
+          </div>
+        </div>
+        <p class="bslider__hint">Glissez pour comparer</p>
+      </div>
+
+      <!-- Pair 3 — drag slider -->
+      <div class="bslider reveal">
+        <div class="bslider__layer bslider__layer--after">
+          <img src="/after2.png" alt="Après 3" />
+          <span class="bslider__tag bslider__tag--after">Après</span>
+        </div>
+        <div class="bslider__layer bslider__layer--before">
+          <img src="/before2.png" alt="Avant 3" />
+          <span class="bslider__tag">Avant</span>
+        </div>
+        <div class="bslider__handle">
+          <div class="bslider__btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"/>
+              <polyline points="9 18 3 12 9 6" transform="rotate(180,12,12)"/>
+            </svg>
+          </div>
+        </div>
+        <p class="bslider__hint">Glissez pour comparer</p>
+      </div>
+
+    </div>
+
+    <p class="ba__quote reveal">
+      "Une vitrine soignée, c'est un client qui s'arrête."
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROCESS
+  ══════════════════════════════════════════ -->
+  <section class="process" id="processus">
+    <div class="process__wrap">
+
+      <div class="process__header reveal">
+        <p class="section-tag">Comment ça marche</p>
+        <h2 class="section-title">De l'idée à la pose,<br/>on s'occupe de tout</h2>
+      </div>
+
+      <div class="process__steps">
+
+        <div class="process__step reveal">
+          <div class="process__num">01</div>
+          <div class="process__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11
+                2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45
+                2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45
+                c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3 class="process__title">Prise de contact</h3>
+          <p class="process__body">
+            Appelez-nous ou envoyez un message. On répond sous 24h et on se déplace gratuitement.
+          </p>
+        </div>
+
+        <div class="process__connector" aria-hidden="true"></div>
+
+        <div class="process__step reveal">
+          <div class="process__num">02</div>
+          <div class="process__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="process__title">Visite &amp; devis</h3>
+          <p class="process__body">
+            On visite votre commerce et on vous remet un devis clair et détaillé, sans engagement.
+          </p>
+        </div>
+
+        <div class="process__connector" aria-hidden="true"></div>
+
+        <div class="process__step reveal">
+          <div class="process__num">03</div>
+          <div class="process__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="process__title">Fabrication</h3>
+          <p class="process__body">
+            Votre enseigne est fabriquée dans notre atelier en Île-de-France. Aucune sous-traitance.
+          </p>
+        </div>
+
+        <div class="process__connector" aria-hidden="true"></div>
+
+        <div class="process__step reveal">
+          <div class="process__num">04</div>
+          <div class="process__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3 class="process__title">Pose &amp; livraison</h3>
+          <p class="process__body">
+            Notre équipe installe tout proprement, dans les délais convenus. Garantie incluse.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GALLERY
+  ══════════════════════════════════════════ -->
+  <section class="gallery" id="realisations">
+    <div class="gallery__wrap">
+
+      <div class="gallery__header reveal">
+        <p class="section-tag">Nos réalisations</p>
+        <h2 class="section-title">Ce qu'on a fait<br/>pour d'autres commerces</h2>
+      </div>
+
+      <div class="gallery__grid reveal">
+
+        <div class="gallery__item">
+          <img src="/ig1.png" alt="Réalisation Mat.enseigne" />
+          <div class="gallery__overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>Voir sur Instagram</span>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <img src="/ig2.png" alt="Réalisation Mat.enseigne" />
+          <div class="gallery__overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>Voir sur Instagram</span>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <img src="/ig3.png" alt="Réalisation Mat.enseigne" />
+          <div class="gallery__overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>Voir sur Instagram</span>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <img src="/ig4.png" alt="Réalisation Mat.enseigne" />
+          <div class="gallery__overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="var(--gold)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>Voir sur Instagram</span>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="gallery__footer reveal">
+        <a
+          href="https://www.instagram.com/mat.enseigne"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--outline-gold"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          Voir tous nos travaux — @mat.enseigne
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="faq__wrap">
+
+      <div class="faq__header reveal">
+        <p class="faq__label">
+          <span class="faq__label-line"></span>
+          Questions fréquentes
+          <span class="faq__label-line"></span>
+        </p>
+        <h2 class="faq__title">Tout ce que vous voulez savoir</h2>
+      </div>
+
+      <div class="faq__list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Vous intervenez dans quelles zones ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              Nous intervenons sur Paris et toute l'Île-de-France — Seine-et-Marne,
+              Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne et
+              Val-d'Oise. Le déplacement pour le devis est gratuit.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quel est le délai de fabrication et de pose ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              En moyenne, comptez 2 à 3 semaines entre la validation du devis et la
+              pose. Pour les projets urgents, nous faisons le maximum pour accélérer
+              les délais — parlez-nous en directement.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Est-ce que vous faites le devis gratuitement ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              Oui, le devis est toujours gratuit et sans engagement. Nous nous
+              déplaçons sur place pour voir votre commerce et vous proposer la
+              meilleure solution adaptée à votre budget.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Vous travaillez avec quel type de commerces ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              Tous types — coiffeurs, restaurants, kebabs, pharmacies, salons de
+              beauté, garages, boutiques de mode, bureaux et bien plus. Si vous avez
+              une vitrine, nous pouvons l'améliorer.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       INLINE CTA BANNER
+  ══════════════════════════════════════════ -->
+  <section class="icta">
+    <div class="icta__bg" aria-hidden="true"></div>
+    <div class="icta__wrap">
+
+      <div class="icta__left">
+        <p class="icta__label">On est là pour vous</p>
+        <h2 class="icta__title">
+          Votre vitrine mérite mieux<br/>qu'un panneau générique.
+        </h2>
+        <p class="icta__body">
+          Appelez-nous, on se déplace gratuitement pour voir votre commerce
+          et vous proposer la meilleure solution, dans votre budget.
+        </p>
+      </div>
+
+      <div class="icta__right">
+        <a href="tel:+33605894411" class="icta__btn icta__btn--primary">
+          ☎&nbsp; 06 05 89 44 11
+        </a>
+        <a href="/contact" class="icta__btn icta__btn--ghost">
+          Envoyer un message
+        </a>
+        <p class="icta__trust">Devis gratuit · Réponse sous 24h</p>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ── Shared utilities ───────────────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn--gold {
+    background: var(--gold);
+    color: #080810;
+    box-shadow: var(--glow-sm);
+  }
+  .btn--gold:hover {
+    box-shadow: var(--glow-md);
+    transform: translateY(-2px);
+  }
+
+  .btn--outline {
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid rgba(17, 17, 17, 0.3);
+  }
+  .btn--outline:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .btn--outline-gold {
+    background: transparent;
+    color: var(--gold);
+    border: 1.5px solid rgba(0, 180, 245, 0.35);
+    box-shadow: 0 0 0 0 rgba(0, 180, 245, 0);
+  }
+  .btn--outline-gold:hover {
+    border-color: var(--gold);
+    box-shadow: var(--glow-sm);
+    transform: translateY(-1px);
+  }
+
+  .btn--ghost {
+    background: transparent;
+    color: rgba(238, 236, 234, 0.55);
+    border: 1.5px solid var(--border);
+  }
+  .btn--ghost:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text);
+  }
+
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 12px rgba(0, 180, 245, 0.4);
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--text);
+  }
+
+  .section-sub {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 36rem;
+  }
+
+  /* Reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Animations ─────────────────────────────── */
+  @keyframes neonPulse {
+    0%, 100% {
+      text-shadow:
+        0 0 10px rgba(255, 184, 0, 0.9),
+        0 0 28px rgba(255, 184, 0, 0.5),
+        0 0 56px rgba(255, 184, 0, 0.25);
+    }
+    50% {
+      text-shadow:
+        0 0 16px rgba(255, 184, 0, 1),
+        0 0 44px rgba(255, 184, 0, 0.7),
+        0 0 90px rgba(255, 184, 0, 0.4);
+    }
+  }
+
+  @keyframes dotPulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,184,0,0.5); }
+    50%       { opacity: 0.7; box-shadow: 0 0 0 6px rgba(255,184,0,0); }
+  }
+
+  @keyframes scrollLine {
+    0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+    50%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
+    100% { transform: scaleY(1); transform-origin: bottom; opacity: 0; }
+  }
+
+  /* ── HERO ──────────────────────────────────── */
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: var(--nav-h);
+  }
+
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08) 0%,
+      rgba(0, 0, 0, 0.2)  35%,
+      rgba(49, 85, 159, 0.6) 70%,
+      rgba(49, 85, 159, 0.88) 100%
+    );
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  .hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 1.75rem;
+  }
+
+  .hero__eyebrow-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--warm-gold);
+    flex-shrink: 0;
+    animation: dotPulse 2.5s ease-in-out infinite;
+  }
+
+  .hero__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.12;
+    color: white;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero__title em {
+    font-style: normal;
+    color: var(--warm-gold);
+    animation: neonPulse 3.5s ease-in-out infinite;
+  }
+
+  .hero__sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.75;
+    max-width: 36rem;
+    margin: 0 auto 2.5rem;
+  }
+
+  .hero__actions {
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .hero__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    transition: background 0.25s ease, color 0.25s ease,
+                border-color 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .hero__btn--primary {
+    background: var(--gold);
+    color: #31559F;
+    border: none;
+    box-shadow: 0 4px 24px rgba(0, 158, 224, 0.35);
+  }
+  .hero__btn--primary:hover {
+    background: white;
+    color: #31559F;
+    transform: translateY(-2px);
+  }
+
+  .hero__btn--ghost {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 184, 0, 0.5);
+    letter-spacing: 0.1em;
+  }
+  .hero__btn--ghost:hover {
+    border-color: var(--warm-gold);
+    color: var(--warm-gold);
+    background: rgba(255, 184, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  /* Stats */
+  .hero__stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3rem;
+  }
+
+  .hero__stat {
+    text-align: center;
+    padding: 0 2.5rem;
+  }
+
+  .hero__stat-num {
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--warm-gold);
+    line-height: 1;
+    text-shadow: 0 0 20px rgba(255, 184, 0, 0.4);
+  }
+
+  .hero__stat-label {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.4rem;
+  }
+
+  .hero__stat-sep {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+  }
+
+  /* Scroll indicator */
+  .hero__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .hero__scroll-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .hero__scroll-line {
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollLine 2s ease-in-out infinite;
+  }
+
+  /* ── TRUST BAR ─────────────────────────────── */
+  .trust-bar {
+    background: var(--bg-soft);
+    border-top: 1px solid rgba(0, 180, 245, 0.1);
+    border-bottom: 1px solid rgba(0, 180, 245, 0.1);
+    padding: 1rem 2rem;
+  }
+
+  .trust-bar__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .trust-bar__item {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.79rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .trust-bar__sep {
+    width: 1px;
+    height: 14px;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+
+  /* ── SERVICES ──────────────────────────────── */
+  .services {
+    background: var(--bg);
+    padding: 7rem 4rem;
+  }
+
+  .services__wrap { max-width: 1200px; margin: 0 auto; }
+
+  .services__header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .svc-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .svc-label-line {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .svc-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+  }
+
+  /* ── Service rows ── */
+  .svc-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .svc-row--reverse { direction: rtl; }
+  .svc-row--reverse > * { direction: ltr; }
+  .svc-row--last { margin-bottom: 0; }
+
+  /* Image panel */
+  .svc-row__img {
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+  }
+
+  .svc-row__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+  .svc-row__img:hover img { transform: scale(1.04); }
+
+  /* ── Service carousel ── */
+  .svc-carousel {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  .svc-carousel__track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .svc-carousel__slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+  .svc-row__img:hover .svc-carousel__slide { transform: scale(1.04); }
+
+  /* Prev / Next buttons */
+  .svc-carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(49,85,159,0.55);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0,158,224,0.4);
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .svc-carousel__btn:hover {
+    background: rgba(0,158,224,0.75);
+    border-color: var(--gold);
+  }
+  .svc-carousel__btn--prev { left: 0.8rem; }
+  .svc-carousel__btn--next { right: 0.8rem; }
+
+  /* Dots */
+  .svc-carousel__dots {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.4rem;
+    z-index: 10;
+  }
+  .svc-carousel__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: background 0.25s, transform 0.25s;
+  }
+  .svc-carousel__dot.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    transform: scale(1.25);
+  }
+
+  .svc-row__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(49,85,159,0.3) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Gold corner accents */
+  .svc-row__corner {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+  }
+
+  .svc-row__corner--tl { top: 1.5rem; left: 1.5rem; }
+  .svc-row__corner--tr { top: 1.5rem; right: 1.5rem; }
+
+  .svc-row__corner-h {
+    position: absolute;
+    top: 0; left: 0;
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.7;
+  }
+  .svc-row__corner-v {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1px;
+    height: 40px;
+    background: var(--gold);
+    opacity: 0.7;
+  }
+  .svc-row__corner--tr .svc-row__corner-h { left: auto; right: 0; }
+  .svc-row__corner--tr .svc-row__corner-v { left: auto; right: 0; }
+
+  /* Text panel */
+  .svc-row__text { padding: 1rem; }
+
+  .svc-row__ghost {
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(255, 184, 0, 0.15);
+    margin-bottom: -1rem;
+    user-select: none;
+  }
+
+  .svc-row__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--warm-gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .svc-row__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--warm-gold);
+    flex-shrink: 0;
+  }
+
+  .svc-row__heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+
+  .svc-row__desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  .svc-row__details {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  .svc-row__details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(49, 85, 159, 0.6);
+    line-height: 1.6;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(49, 85, 159, 0.06);
+  }
+  .svc-row__details li:last-child { border-bottom: none; }
+  .svc-row__details li::before {
+    content: '—';
+    color: var(--gold);
+    flex-shrink: 0;
+    font-weight: 300;
+  }
+
+  .svc-row__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--navy);
+    border-bottom: 1px solid rgba(49, 85, 159, 0.3);
+    padding-bottom: 0.25rem;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .svc-row__cta:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+
+  /* ── Slide-down (images: drop from above) ── */
+  .slide-from-right,
+  .slide-from-left {
+    opacity: 0;
+    transform: translateY(-120px);
+    transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .slide-from-right.visible,
+  .slide-from-left.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Fade-up (text panels) ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .delay-1 { transition-delay: 0.2s; }
+
+  /* ── BEFORE / AFTER ─────────────────────────── */
+  .ba {
+    background: var(--bg-soft);
+    padding: 4rem 1.25rem 3.5rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Header */
+  .ba__header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .ba__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .ba__eyebrow-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--warm-gold);
+    flex-shrink: 0;
+  }
+  .ba__title {
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+  .ba__title-accent { color: var(--warm-gold); }
+  .ba__sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+
+  /* Grid — mobile: 1 col, tablet+: 3 cols */
+  .ba__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto 2.5rem;
+  }
+
+  /* Card */
+  .ba__card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .ba__card:hover {
+    box-shadow: 0 6px 30px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,158,224,0.18);
+    transform: translateY(-3px);
+  }
+
+  /* Pair — the two halves side by side */
+  .ba__pair {
+    display: flex;
+    height: 220px;
+  }
+
+  .ba__half {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  .ba__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .ba__card:hover .ba__img { transform: scale(1.04); }
+
+  /* Avant / Après tag */
+  .ba__tag {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #444;
+    line-height: 1;
+  }
+  .ba__tag--after {
+    background: rgba(0,158,224,0.15);
+    border-color: rgba(0,158,224,0.4);
+    color: var(--gold);
+  }
+
+  /* Gold vertical divider */
+  .ba__sep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28px;
+    flex-shrink: 0;
+    background: var(--bg-card);
+    z-index: 2;
+  }
+  .ba__sep-line {
+    flex: 1;
+    width: 1px;
+    background: linear-gradient(to bottom,
+      transparent,
+      rgba(0,158,224,0.5) 30%,
+      rgba(0,158,224,0.5) 70%,
+      transparent);
+  }
+  .ba__sep-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    border: 1px solid rgba(0,158,224,0.35);
+    box-shadow: 0 0 10px rgba(0,158,224,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ba__quote {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--muted);
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* ── Drag-to-compare slider ── */
+  .bslider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    aspect-ratio: 1 / 1;
+    cursor: col-resize;
+    user-select: none;
+    touch-action: pan-y;
+  }
+
+  .bslider__layer {
+    position: absolute;
+    inset: 0;
+  }
+  .bslider__layer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+  }
+  .bslider__layer--before {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  /* Avant / Après tags */
+  .bslider__tag {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 0.22rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #444;
+    pointer-events: none;
+  }
+  .bslider__tag--after {
+    left: auto;
+    right: 0.75rem;
+    background: rgba(0,158,224,0.15);
+    border-color: rgba(0,158,224,0.4);
+    color: var(--gold);
+  }
+
+  /* Vertical line + drag button */
+  .bslider__handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: rgba(255,255,255,0.9);
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .bslider__btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid rgba(0,158,224,0.5);
+    box-shadow: 0 2px 14px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  /* Hint text */
+  .bslider__hint {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(4px);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 11;
+  }
+
+  @media (min-width: 640px) {
+    .ba__pair { height: 260px; }
+    .ba__grid  { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (min-width: 1024px) {
+    .ba {
+      padding: 6rem 3rem 5rem;
+    }
+    .ba__grid  {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      max-width: 1500px;
+    }
+    .ba__pair  { height: 360px; }
+    .bslider   { aspect-ratio: 4 / 3; }
+  }
+
+  @media (min-width: 1280px) {
+    .ba {
+      padding: 6rem 4rem 5rem;
+    }
+    .ba__pair  { height: 420px; }
+    .ba__grid  { gap: 2rem; max-width: 1600px; }
+    .bslider   { aspect-ratio: 4 / 3; }
+  }
+
+  /* ── PROCESS ────────────────────────────────── */
+  .process {
+    background: var(--bg);
+    padding: 6rem 2rem;
+  }
+
+  .process__wrap { max-width: 1200px; margin: 0 auto; }
+  .process__header { margin-bottom: 4rem; }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    align-items: start;
+  }
+
+  .process__step { text-align: center; padding: 0 1rem; }
+
+  .process__connector {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2.6rem;
+  }
+  .process__connector::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0,180,245,0.3), rgba(0,180,245,0.1));
+  }
+
+  .process__num {
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--warm-gold);
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 8px rgba(0, 180, 245, 0.4);
+  }
+
+  .process__icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 180, 245, 0.2);
+    background: var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .process__step:hover .process__icon {
+    border-color: rgba(0, 180, 245, 0.5);
+    box-shadow: 0 0 20px rgba(0, 180, 245, 0.15);
+  }
+
+  .process__title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .process__body {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  /* ── GALLERY ─────────────────────────────────── */
+  .gallery {
+    background: var(--bg-soft);
+    padding: 6rem 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .gallery__wrap { max-width: 1200px; margin: 0 auto; }
+  .gallery__header { margin-bottom: 3rem; }
+
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--bg-card);
+    cursor: pointer;
+    border: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+  .gallery__item::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  .gallery__item:hover { border-color: rgba(0, 158, 224, 0.4); }
+
+  .gallery__item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+  }
+  .gallery__item:hover img {
+    transform: scale(1.05);
+  }
+
+  .gallery__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(49, 85, 159, 0.72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .gallery__item:hover .gallery__overlay { opacity: 1; }
+  .gallery__overlay span { text-shadow: 0 0 10px rgba(0,180,245,0.4); }
+
+  .gallery__footer { text-align: center; }
+
+  /* ── MOBILE ─────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .svc-row  { gap: 2.5rem; }
+    .svc-row__img { height: 340px; }
+    .process__steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .process__connector { display: none; }
+  }
+
+  @media (max-width: 768px) {
+    .hero { min-height: 100svh; }
+    .hero__content { padding: 3rem 1.25rem 4rem; }
+    .hero__title   { font-size: 2rem; }
+    .hero__actions { flex-direction: column; width: 100%; }
+    .hero__btn     { width: 100%; justify-content: center; }
+    .hero__stat    { padding: 0 1.5rem; }
+    .hero__scroll  { display: none; }
+
+    .trust-bar__sep  { display: none; }
+    .trust-bar__wrap { flex-direction: column; gap: 0.6rem; align-items: flex-start; padding: 0 0.5rem; }
+
+    .services        { padding: 4rem 1.5rem; }
+    .svc-row         { grid-template-columns: 1fr; gap: 0; margin-bottom: 4rem; }
+    .svc-row--reverse { direction: ltr; }
+    .svc-row__img    { height: 260px; order: -1; }
+    .svc-row__text   { padding: 1.5rem 0 0; }
+    .svc-row__cta    { width: 100%; justify-content: center; margin-top: 0.5rem; }
+    .slide-from-right,
+    .slide-from-left,
+    .fade-up         { transform: translateY(20px); }
+    .slide-from-right.visible,
+    .slide-from-left.visible,
+    .fade-up.visible { transform: translateY(0); }
+
+    .ba              { padding: 4rem 1.25rem; }
+    .ba__wrap        { grid-template-columns: 1fr; }
+    .ba__center      { display: none; }
+
+    .process         { padding: 4rem 1.25rem; }
+    .process__steps  { grid-template-columns: 1fr; gap: 1.5rem; }
+    .process__step   { text-align: left; padding: 0; }
+    .process__icon   { margin: 0 0 0.75rem; }
+    .process__body   { max-width: none; margin: 0; }
+
+    .gallery         { padding: 4rem 1.25rem; }
+    .gallery__grid   { grid-template-columns: 1fr 1fr; }
+
+    .faq             { padding: 4rem 1.5rem; }
+    .faq-question    { padding: 1.25rem 0; }
+    .faq-question span:first-child { font-size: 0.95rem; }
+    .faq-answer__inner { font-size: 0.85rem; }
+  }
+</style>
+
+<style>
+  /* ── FAQ ─────────────────────────────────────── */
+  .faq {
+    background: #ffffff;
+    padding: 7rem 4rem;
+  }
+
+  .faq__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .faq__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .faq__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .faq__label-line {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .faq__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+  }
+
+  .faq__list {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(49, 85, 159, 0.12);
+  }
+  .faq-item:first-child {
+    border-top: 1px solid rgba(49, 85, 159, 0.12);
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 1.5rem;
+  }
+
+  .faq-question span:first-child {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    transition: color 0.25s ease;
+    line-height: 1.4;
+  }
+
+  .faq-toggle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--warm-gold);
+    line-height: 1;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    user-select: none;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+
+  .faq-answer__inner {
+    padding-bottom: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  /* Open state */
+  .faq-item.open .faq-question span:first-child {
+    color: var(--warm-gold);
+  }
+  .faq-item.open .faq-toggle {
+    transform: rotate(45deg);
+  }
+  .faq-item.open .faq-answer {
+    max-height: 300px;
+  }
+
+  /* ── INLINE CTA BANNER ───────────────────────── */
+  .icta {
+    position: relative;
+    background: #31559F;
+    padding: 5rem 4rem;
+    overflow: hidden;
+  }
+
+  .icta__bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at 30% 50%,
+      rgba(0, 158, 224, 0.06) 0%,
+      transparent 60%
+    );
+    pointer-events: none;
+  }
+
+  .icta__wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .icta__label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .icta__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .icta__body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.75;
+    max-width: 28rem;
+  }
+
+  .icta__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 20rem;
+    margin-left: auto;
+  }
+
+  .icta__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+  }
+
+  .icta__btn--primary {
+    font-size: 0.95rem;
+    background: var(--warm-gold);
+    color: #31559F;
+    border: none;
+    box-shadow: 0 4px 24px rgba(255, 184, 0, 0.35);
+  }
+  .icta__btn--primary:hover {
+    background: white;
+    color: #31559F;
+  }
+
+  .icta__btn--ghost {
+    font-size: 0.9rem;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .icta__btn--ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .icta__trust {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .icta          { padding: 3.5rem 1.5rem; }
+    .icta__wrap    { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+    .icta__body    { max-width: none; margin: 0 auto; }
+    .icta__right   { max-width: none; margin: 0; }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* ── Services slide-in ── */
+  const slideObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          slideObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  document.querySelectorAll('.slide-from-right, .slide-from-left, .fade-up').forEach(el => slideObserver.observe(el));
+
+  /* ── Service carousels ── */
+  document.querySelectorAll('[data-carousel]').forEach(carousel => {
+    const track   = carousel.querySelector('.svc-carousel__track');
+    const slides  = carousel.querySelectorAll('.svc-carousel__slide');
+    const dots    = carousel.querySelectorAll('.svc-carousel__dot');
+    const prevBtn = carousel.querySelector('.svc-carousel__btn--prev');
+    const nextBtn = carousel.querySelector('.svc-carousel__btn--next');
+    let current = 0;
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    prevBtn?.addEventListener('click', () => goTo(current - 1));
+    nextBtn?.addEventListener('click', () => goTo(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+    setInterval(() => goTo(current + 1), 2000);
+  });
+
+  /* ── Before/After drag sliders ── */
+  document.querySelectorAll('.bslider').forEach(slider => {
+    const before = slider.querySelector('.bslider__layer--before');
+    const handle = slider.querySelector('.bslider__handle');
+    const hint   = slider.querySelector('.bslider__hint');
+    let dragging = false;
+
+    function setPos(clientX) {
+      const rect = slider.getBoundingClientRect();
+      const pct  = Math.min(Math.max((clientX - rect.left) / rect.width * 100, 0), 100);
+      before.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      handle.style.left     = pct + '%';
+    }
+
+    slider.addEventListener('mousedown',  e => { dragging = true; setPos(e.clientX); if (hint) hint.style.opacity = '0'; });
+    window.addEventListener('mousemove',  e => { if (dragging) setPos(e.clientX); });
+    window.addEventListener('mouseup',    ()  => { dragging = false; });
+
+    slider.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); if (hint) hint.style.opacity = '0'; }, { passive: true });
+    window.addEventListener('touchmove',  e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchend',   ()  => { dragging = false; });
+  });
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-question')?.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.faq-question')?.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
