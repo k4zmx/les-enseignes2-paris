@@ -1,0 +1,697 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pairs = Array.from({ length: 16 }, (_, i) => i + 1);
+const rows  = [pairs.slice(0,4), pairs.slice(4,8), pairs.slice(8,12), pairs.slice(12,16)];
+---
+
+<Layout title="Nos Créations — Mat.enseigne">
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="cr-hero">
+    <div class="cr-hero__wrap">
+      <p class="cr-hero__eyebrow"><span class="cr-hero__dot"></span>Avant & Après</p>
+      <h1 class="cr-hero__title">Nos <em>créations</em></h1>
+      <p class="cr-hero__sub">
+        Chaque enseigne raconte une histoire. Faites glisser pour voir la transformation.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ GALLERY ══ -->
+  <section class="cr-gallery">
+    <div class="cr-gallery__inner">
+      {rows.map((row, rowIdx) => (
+        <div class="cr-row">
+
+          {/* Viewport (overflow:hidden on mobile, display:contents on desktop) */}
+          <div class="cr-row__viewport">
+            <div class="cr-row__track" data-row={rowIdx}>
+              {row.map((n, slideIdx) => (
+                <div class="bslider" data-slide={slideIdx}>
+                  <div class="bslider__layer bslider__layer--after">
+                    <img src={`/beforeafter/${n}a.jpeg`} alt={`Réalisation ${n} — après`} loading="lazy" />
+                    <span class="bslider__tag bslider__tag--after">Après</span>
+                  </div>
+                  <div class="bslider__layer bslider__layer--before">
+                    <img src={`/beforeafter/${n}b.jpeg`} alt={`Réalisation ${n} — avant`} loading="lazy" />
+                    <span class="bslider__tag">Avant</span>
+                  </div>
+                  <div class="bslider__handle">
+                    <div class="bslider__btn">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="var(--gold)" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"/>
+                        <polyline points="9 18 3 12 9 6" transform="rotate(180,12,12)"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="bslider__hint">Glissez pour comparer</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile-only controls */}
+          <div class="cr-row__controls">
+            <button class="cr-row__arrow cr-row__arrow--prev" aria-label="Précédent">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <div class="cr-row__dots">
+              {row.map((_, i) => <span class={`cr-dot${i === 0 ? ' cr-dot--active' : ''}`}></span>)}
+            </div>
+            <button class="cr-row__arrow cr-row__arrow--next" aria-label="Suivant">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section class="faq" id="faq">
+    <div class="faq__wrap">
+      <div class="faq__header">
+        <p class="section-tag">Questions fréquentes</p>
+        <h2 class="section-title">Vous avez des questions ?</h2>
+      </div>
+      <div class="faq__list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Dans quelles zones intervenez-vous ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              Nous intervenons à Paris et dans toute l'Île-de-France — Val-de-Marne,
+              Seine-Saint-Denis, Hauts-de-Seine, Essonne, Yvelines et au-delà sur
+              demande. Déplacement pour devis toujours gratuit.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quel est le délai de fabrication et de pose ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              En moyenne, comptez 2 à 3 semaines entre la validation du devis et la
+              pose. Pour les projets urgents, nous faisons le maximum pour accélérer
+              les délais — parlez-nous en directement.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Est-ce que vous faites le devis gratuitement ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              Oui, le devis est toujours gratuit et sans engagement. Nous nous
+              déplaçons sur place pour voir votre commerce et vous proposer la
+              meilleure solution adaptée à votre budget.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Vous travaillez avec quel type de commerces ?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer__inner">
+              Tous types — coiffeurs, restaurants, kebabs, pharmacies, salons de
+              beauté, garages, boutiques de mode, bureaux et bien plus. Si vous avez
+              une vitrine, nous pouvons l'améliorer.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA ══ -->
+  <section class="icta">
+    <div class="icta__bg" aria-hidden="true"></div>
+    <div class="icta__wrap">
+      <div class="icta__left">
+        <p class="icta__label">On est là pour vous</p>
+        <h2 class="icta__title">
+          Votre vitrine mérite mieux<br/>qu'un panneau générique.
+        </h2>
+        <p class="icta__body">
+          Appelez-nous, on se déplace gratuitement pour voir votre commerce
+          et vous proposer la meilleure solution, dans votre budget.
+        </p>
+      </div>
+      <div class="icta__right">
+        <a href="tel:+33605894411" class="icta__btn icta__btn--primary">
+          ☎&nbsp; 06 05 89 44 11
+        </a>
+        <a href="/contact" class="icta__btn icta__btn--ghost">
+          Envoyer un message
+        </a>
+        <p class="icta__trust">Devis gratuit · Réponse sous 24h</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ── Hero ── */
+  .cr-hero {
+    padding-top: calc(var(--nav-h) + 5rem);
+    padding-bottom: 4rem;
+    text-align: center;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
+  }
+  .cr-hero__wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .cr-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+  }
+  .cr-hero__dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--warm-gold);
+    flex-shrink: 0;
+  }
+  .cr-hero__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .cr-hero__title em {
+    font-style: normal;
+    color: var(--navy);
+  }
+  .cr-hero__sub {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ── Gallery section ── */
+  .cr-gallery {
+    padding: 5rem 2rem 6rem;
+    background: var(--bg);
+  }
+  .cr-gallery__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* space between rows on desktop */
+  }
+
+  /* ── Row: desktop = 4-col grid ── */
+  .cr-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+  }
+
+  /* On desktop these wrappers are layout-transparent */
+  .cr-row__viewport { display: contents; }
+  .cr-row__track    { display: contents; }
+  .cr-row__controls { display: none; }
+
+  /* ── Drag-to-compare slider ── */
+  .bslider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    aspect-ratio: 1 / 1;
+    cursor: col-resize;
+    user-select: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .bslider:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+    transform: translateY(-2px);
+  }
+
+  .bslider__layer {
+    position: absolute;
+    inset: 0;
+  }
+  .bslider__layer img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+  }
+  .bslider__layer--before {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .bslider__tag {
+    position: absolute;
+    bottom: 0.65rem;
+    left: 0.65rem;
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(0,0,0,0.52);
+    color: white;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    z-index: 4;
+  }
+  .bslider__tag--after {
+    left: auto;
+    right: 0.65rem;
+  }
+
+  .bslider__handle {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 5;
+  }
+  .bslider__btn {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .bslider__hint {
+    position: absolute;
+    bottom: 0.65rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    background: rgba(0,0,0,0.38);
+    padding: 0.2rem 0.65rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    z-index: 6;
+    opacity: 1;
+    transition: opacity 0.35s;
+  }
+  .bslider.dragging .bslider__hint { opacity: 0; }
+
+  /* ── FAQ ── */
+  .faq {
+    padding: 6rem 1.5rem;
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+  }
+  .faq__wrap {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .faq__header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .section-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .faq__list { display: flex; flex-direction: column; }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.3rem 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: color 0.15s;
+  }
+  .faq-question[aria-expanded="true"] { color: var(--warm-gold); }
+  .faq-toggle {
+    font-size: 1.3rem;
+    line-height: 1;
+    color: var(--warm-gold);
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+  }
+  .faq-question[aria-expanded="true"] .faq-toggle { transform: rotate(45deg); }
+  .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+  }
+  .faq-answer.open { grid-template-rows: 1fr; }
+  .faq-answer__inner {
+    overflow: hidden;
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.75;
+    padding-bottom: 1.3rem;
+  }
+
+  /* ── CTA ── */
+  .icta {
+    position: relative;
+    background: #31559F;
+    padding: 5.5rem 2rem;
+    overflow: hidden;
+  }
+  .icta__bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(0,158,224,0.18) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .icta__wrap {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+  .icta__label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(238,236,234,0.45);
+    margin-bottom: 0.75rem;
+  }
+  .icta__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+    font-weight: 800;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+  .icta__body {
+    font-size: 0.9rem;
+    color: rgba(238,236,234,0.55);
+    line-height: 1.7;
+    max-width: 440px;
+  }
+  .icta__right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    min-width: 210px;
+  }
+  .icta__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.85rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+  .icta__btn--primary {
+    background: var(--warm-gold);
+    color: var(--navy);
+    box-shadow: 0 4px 24px rgba(255,184,0,0.35);
+  }
+  .icta__btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(255,184,0,0.45);
+  }
+  .icta__btn--ghost {
+    background: transparent;
+    color: rgba(238,236,234,0.7);
+    border: 1px solid rgba(238,236,234,0.2);
+  }
+  .icta__btn--ghost:hover {
+    background: rgba(255,255,255,0.08);
+    color: white;
+    border-color: rgba(255,255,255,0.4);
+  }
+  .icta__trust {
+    font-size: 0.72rem;
+    color: rgba(238,236,234,0.3);
+    text-align: center;
+  }
+
+  /* ══════════════════════════════════════════
+     MOBILE — one slider at a time carousel
+  ══════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    .cr-hero {
+      padding-top: calc(var(--nav-h) + 3rem);
+      padding-bottom: 3rem;
+    }
+
+    .cr-gallery {
+      padding: 3rem 0 4rem;
+    }
+
+    .cr-gallery__inner {
+      gap: 0; /* rows separated by controls below */
+    }
+
+    /* Each row is now a proper carousel block */
+    .cr-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 0 0 2.5rem; /* space below each row */
+    }
+
+    /* Viewport clips to one slide */
+    .cr-row__viewport {
+      display: block;
+      overflow: hidden;
+      border-radius: 0;
+      margin: 0 1.25rem;
+      border-radius: 16px;
+    }
+
+    /* Track animates horizontally */
+    .cr-row__track {
+      display: flex;
+      will-change: transform;
+      transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Each slide takes 100% of viewport */
+    .bslider {
+      flex: 0 0 100%;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      border: none;
+      aspect-ratio: 4 / 3;
+      transform: none !important; /* disable hover lift inside carousel */
+    }
+    .bslider:hover { transform: none; box-shadow: none; }
+
+    /* Controls bar */
+    .cr-row__controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 1rem 1.25rem 0;
+    }
+
+    .cr-row__arrow {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: white;
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.18s, border-color 0.18s, color 0.18s;
+      flex-shrink: 0;
+    }
+    .cr-row__arrow:hover,
+    .cr-row__arrow:active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: white;
+    }
+
+    .cr-row__dots {
+      display: flex;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .cr-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cr-dot--active {
+      background: var(--navy);
+      transform: scale(1.3);
+    }
+
+    /* CTA */
+    .icta__wrap {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+    .icta__body { max-width: none; margin: 0 auto; }
+    .icta__right { min-width: 0; }
+  }
+</style>
+
+<script>
+  /* ══ Mobile carousel per row ══ */
+  document.querySelectorAll('.cr-row').forEach(row => {
+    const track  = row.querySelector('.cr-row__track') as HTMLElement | null;
+    const slides = row.querySelectorAll('.bslider');
+    const dots   = row.querySelectorAll('.cr-dot');
+    const prev   = row.querySelector('.cr-row__arrow--prev');
+    const next   = row.querySelector('.cr-row__arrow--next');
+    if (!track || !slides.length) return;
+
+    let cur = 0;
+    const total = slides.length;
+
+    function goTo(n: number) {
+      cur = ((n % total) + total) % total;
+      track.style.transform = `translateX(-${cur * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('cr-dot--active', i === cur));
+    }
+
+    prev?.addEventListener('click', () => goTo(cur - 1));
+    next?.addEventListener('click', () => goTo(cur + 1));
+  });
+
+  /* ══ Drag-to-compare sliders ══ */
+  document.querySelectorAll('.bslider').forEach(sliderEl => {
+    const slider = sliderEl as HTMLElement;
+    const before = slider.querySelector('.bslider__layer--before') as HTMLElement | null;
+    const handle = slider.querySelector('.bslider__handle') as HTMLElement | null;
+    if (!before || !handle) return;
+
+    let dragging = false;
+
+    function setPos(clientX: number) {
+      const rect = slider.getBoundingClientRect();
+      let pct = (clientX - rect.left) / rect.width * 100;
+      pct = Math.max(2, Math.min(98, pct));
+      before.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      handle.style.left = `${pct}%`;
+    }
+
+    slider.addEventListener('mousedown', e => {
+      dragging = true;
+      slider.classList.add('dragging');
+      setPos(e.clientX);
+    });
+    window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
+    window.addEventListener('mouseup',   ()  => { dragging = false; slider.classList.remove('dragging'); });
+
+    slider.addEventListener('touchstart', e => {
+      dragging = true;
+      slider.classList.add('dragging');
+      setPos(e.touches[0].clientX);
+    }, { passive: true });
+    window.addEventListener('touchmove', e => {
+      if (dragging) setPos(e.touches[0].clientX);
+    }, { passive: true });
+    window.addEventListener('touchend', () => { dragging = false; slider.classList.remove('dragging'); });
+  });
+
+  /* ══ FAQ accordion ══ */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-question').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        (b.nextElementSibling as HTMLElement)?.classList.remove('open');
+      });
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        (btn.nextElementSibling as HTMLElement)?.classList.add('open');
+      }
+    });
+  });
+</script>

@@ -92,9 +92,10 @@ const { title } = Astro.props;
         </a>
 
         <nav class="nav__links" aria-label="Navigation principale">
-          <a href="/"        class="nav__link">Accueil</a>
-          <a href="/about"   class="nav__link">À propos</a>
-          <a href="/contact" class="nav__link">Contact</a>
+          <a href="/"           class="nav__link">Accueil</a>
+          <a href="/creations"  class="nav__link">Nos créations</a>
+          <a href="/about"      class="nav__link">À propos</a>
+          <a href="/contact"    class="nav__link">Contact</a>
         </nav>
 
         <div class="nav__actions">
@@ -146,6 +147,7 @@ const { title } = Astro.props;
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
       <nav>
         <a href="/">Accueil</a>
+        <a href="/creations">Nos créations</a>
         <a href="/about">À propos</a>
         <a href="/contact">Contact</a>
       </nav>
@@ -416,11 +418,11 @@ const { title } = Astro.props;
       left: 50%;
       transform: translateX(-50%);
       z-index: 100;
-      background: var(--navy);
+      background: #0E1B30;
       color: white;
       padding: 0.75rem 1.4rem;
       border-radius: 50px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 1px rgba(201,168,76,0.2);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,184,0,0.18);
       text-decoration: none;
       white-space: nowrap;
     }
