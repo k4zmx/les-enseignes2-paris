@@ -7,6 +7,20 @@ const rows  = [pairs.slice(0,4), pairs.slice(4,8), pairs.slice(8,12), pairs.slic
 
 <Layout title="Nos Créations — Mat.enseigne">
 
+<!-- Creations page: navbar is transparent over a light bg, so flip text to navy when unscrolled -->
+<style is:global>
+  #navbar:not(.scrolled) .nav__link,
+  #navbar:not(.scrolled) .nav__phone {
+    color: var(--navy);
+  }
+  #navbar:not(.scrolled) .nav__link:hover { color: var(--gold); }
+  #navbar:not(.scrolled) .nav__insta { color: var(--navy); }
+  #navbar:not(.scrolled) .nav__insta:hover { color: var(--gold); }
+  #navbar:not(.scrolled) .nav__burger span { background: var(--navy); }
+  /* Logo: swap white text fill to navy */
+  #navbar:not(.scrolled) .nav__logo svg text[fill="white"] { fill: var(--navy); }
+</style>
+
   <!-- ══ PAGE HERO ══ -->
   <section class="cr-hero">
     <div class="cr-hero__wrap">
