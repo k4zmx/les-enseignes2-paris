@@ -1,0 +1,394 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact — Mat.enseigne">
+
+  <!-- ══ HERO ══ -->
+  <section class="ct-hero">
+    <div class="ct-hero__wrap">
+      <p class="ct-hero__eyebrow"><span class="ct-dot"></span>Disponible 24h / 7j</p>
+      <h1 class="ct-hero__title">Parlons de<br/><em>votre projet</em></h1>
+      <p class="ct-hero__sub">
+        Devis gratuit, déplacement gratuit — on vient voir votre local
+        et on vous propose la meilleure solution.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ MAIN ══ -->
+  <section class="ct-main">
+    <div class="ct-main__wrap">
+
+      <!-- ── INFO ── -->
+      <div class="ct-info-col">
+
+        <p class="ct-section-label">Nos coordonnées</p>
+        <h2 class="ct-info-title">On est<br/>joignables</h2>
+
+        <div class="ct-cards">
+
+          <a href="tel:+33605894411" class="ct-card ct-card--phone">
+            <div class="ct-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.29 6.29l.83-.83a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="ct-card__text">
+              <span class="ct-card__label">Téléphone</span>
+              <span class="ct-card__value">06 05 89 44 11</span>
+              <span class="ct-card__sub">Disponible 24h / 7j</span>
+            </div>
+            <span class="ct-card__arrow">→</span>
+          </a>
+
+          <a href="mailto:contact@matenseigne.fr" class="ct-card">
+            <div class="ct-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="ct-card__text">
+              <span class="ct-card__label">Email</span>
+              <span class="ct-card__value">contact@matenseigne.fr</span>
+              <span class="ct-card__sub">Réponse rapide · 7j/7</span>
+            </div>
+            <span class="ct-card__arrow">→</span>
+          </a>
+
+          <a href="https://www.instagram.com/mat.enseigne" target="_blank" rel="noopener" class="ct-card">
+            <div class="ct-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <div class="ct-card__text">
+              <span class="ct-card__label">Instagram</span>
+              <span class="ct-card__value">@mat.enseigne</span>
+              <span class="ct-card__sub">Nos réalisations en photos</span>
+            </div>
+            <span class="ct-card__arrow">→</span>
+          </a>
+
+          <div class="ct-card ct-card--zone">
+            <div class="ct-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="ct-card__text">
+              <span class="ct-card__label">Zone d'intervention</span>
+              <span class="ct-card__value">Paris & Île-de-France</span>
+              <span class="ct-card__sub">75 · 77 · 78 · 91 · 92 · 93 · 94 · 95</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hours block -->
+        <div class="ct-hours">
+          <p class="ct-hours__title">Horaires</p>
+          <div class="ct-hours__rows">
+            <div class="ct-hours__row">
+              <span>Lundi – Dimanche</span>
+              <span class="ct-hours__time">24h / 24</span>
+            </div>
+            <div class="ct-hours__row">
+              <span>7 jours sur 7</span>
+              <span class="ct-hours__time">Toujours disponible</span>
+            </div>
+          </div>
+          <p class="ct-hours__note">
+            <span class="ct-hours__dot"></span>
+            Devis gratuit · Déplacement inclus
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style is:global>
+  #navbar:not(.scrolled) .nav__link,
+  #navbar:not(.scrolled) .nav__phone { color: var(--navy); }
+  #navbar:not(.scrolled) .nav__link:hover { color: var(--gold); }
+  #navbar:not(.scrolled) .nav__insta { color: var(--navy); }
+  #navbar:not(.scrolled) .nav__insta:hover { color: var(--gold); }
+  #navbar:not(.scrolled) .nav__burger span { background: var(--navy); }
+  #navbar:not(.scrolled) .nav__logo svg text[fill="white"] { fill: var(--navy); }
+</style>
+
+<style>
+  /* ── Hero ── */
+  .ct-hero {
+    padding-top: calc(var(--nav-h) + 4.5rem);
+    padding-bottom: 4.5rem;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .ct-hero__wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .ct-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+  }
+
+  .ct-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #22C55E;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px rgba(34,197,94,0.2);
+    animation: ctPulse 2s ease-in-out infinite;
+  }
+  @keyframes ctPulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
+    50%       { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+  }
+
+  .ct-hero__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .ct-hero__title em {
+    font-style: normal;
+    color: var(--navy);
+  }
+
+  .ct-hero__sub {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ── Main layout ── */
+  .ct-main {
+    padding: 5rem 2rem 6rem;
+    background: var(--bg);
+  }
+
+  .ct-main__wrap {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .ct-section-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  /* ── Info ── */
+  .ct-info-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .ct-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .ct-card {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1.1rem 1.25rem;
+    background: var(--bg-soft);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: inherit;
+  }
+  .ct-card[href]:hover {
+    border-color: var(--navy);
+    background: white;
+    box-shadow: 0 4px 18px rgba(49,85,159,0.1);
+    transform: translateX(3px);
+  }
+
+  .ct-card--phone {
+    background: linear-gradient(135deg, #0E1B30, #31559F);
+    border-color: transparent;
+    color: white;
+  }
+  .ct-card--phone .ct-card__label { color: rgba(255,255,255,0.5); }
+  .ct-card--phone .ct-card__value { color: white; }
+  .ct-card--phone .ct-card__sub   { color: rgba(255,255,255,0.45); }
+  .ct-card--phone .ct-card__icon  { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.15); color: white; }
+  .ct-card--phone .ct-card__arrow { color: rgba(255,255,255,0.4); }
+  .ct-card--phone[href]:hover {
+    transform: translateX(3px);
+    box-shadow: 0 8px 28px rgba(14,27,48,0.3);
+    background: linear-gradient(135deg, #0E1B30, #1A3670);
+    border-color: transparent;
+  }
+
+  .ct-card__icon {
+    width: 46px; height: 46px;
+    border-radius: 10px;
+    background: white;
+    border: 1.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+
+  .ct-card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ct-card__label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  .ct-card__value {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ct-card__sub {
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+
+  .ct-card__arrow {
+    font-size: 1rem;
+    color: var(--muted);
+    transition: transform 0.2s, color 0.2s;
+    flex-shrink: 0;
+  }
+  .ct-card[href]:hover .ct-card__arrow {
+    transform: translateX(3px);
+    color: var(--navy);
+  }
+
+  /* ── Hours ── */
+  .ct-hours {
+    background: var(--bg-soft);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .ct-hours__title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .ct-hours__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .ct-hours__row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+
+  .ct-hours__time {
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  .ct-hours__row--closed .ct-hours__time {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .ct-hours__note {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 0.85rem;
+    margin-top: 0.25rem;
+  }
+
+  .ct-hours__dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: #22C55E;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 2px rgba(34,197,94,0.2);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .ct-hero {
+      padding-top: calc(var(--nav-h) + 3rem);
+      padding-bottom: 3rem;
+    }
+
+    .ct-main { padding: 3.5rem 1.25rem 4rem; }
+  }
+</style>
+
