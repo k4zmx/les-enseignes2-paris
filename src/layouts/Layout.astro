@@ -286,10 +286,20 @@ const { title } = Astro.props;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
-    transition: color 0.2s;
     white-space: nowrap;
+    padding: 0.4rem 0.85rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
-  .nav__link:hover { color: var(--gold); }
+  .nav__link:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 
   .nav__actions {
     display: flex;
@@ -302,11 +312,19 @@ const { title } = Astro.props;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.85rem;
     color: white;
-    opacity: 0.8;
     white-space: nowrap;
-    transition: opacity 0.2s;
+    padding: 0.4rem 0.85rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.2s, border-color 0.2s;
   }
-  .nav__phone:hover { opacity: 1; }
+  .nav__phone:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 
   .nav__insta {
     display: flex;
@@ -401,6 +419,12 @@ const { title } = Astro.props;
     .nav__burger         { display: flex; }
     .mobile-nav          { display: block; }
     .nav__wrap           { padding: 0 1.25rem; }
+
+    /* Navbar turns blue when burger menu is open */
+    #navbar.menu-open {
+      background: rgba(49, 85, 159, 0.98) !important;
+      box-shadow: none;
+    }
   }
 
   /* ── Sticky call button (mobile only) ── */
@@ -571,6 +595,7 @@ const { title } = Astro.props;
     burger.setAttribute('aria-expanded', String(open));
     mobileNav?.classList.toggle('open', open);
     mobileNav?.setAttribute('aria-hidden', String(!open));
+    navbar?.classList.toggle('menu-open', open);
   });
 
   mobileNav?.querySelectorAll('a').forEach(a => {
@@ -579,6 +604,7 @@ const { title } = Astro.props;
       burger?.setAttribute('aria-expanded', 'false');
       mobileNav.classList.remove('open');
       mobileNav.setAttribute('aria-hidden', 'true');
+      navbar?.classList.remove('menu-open');
     });
   });
 

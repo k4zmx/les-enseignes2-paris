@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="hero">
 
     <!-- Full-bleed background image -->
-    <img src="/herobg.png" alt="" class="hero__bg" aria-hidden="true" />
+    <img src="/herobg2.jpeg" alt="" class="hero__bg" aria-hidden="true" />
 
     <!-- Dark gradient overlay -->
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -845,12 +845,13 @@ import Layout from '../layouts/Layout.astro';
 
   .hero__bg {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+    inset: -8px; /* slightly oversized so blur edges don't show */
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
     object-fit: cover;
     object-position: center;
     z-index: 0;
+    filter: blur(5px);
   }
 
   .hero__overlay {
@@ -947,14 +948,15 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .hero__btn--primary {
-    background: var(--gold);
-    color: #31559F;
-    border: none;
-    box-shadow: 0 4px 24px rgba(0, 158, 224, 0.35);
-  }
-  .hero__btn--primary:hover {
     background: white;
     color: #31559F;
+    border: none;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  }
+  .hero__btn--primary:hover {
+    background: var(--gold);
+    color: white;
+    box-shadow: 0 4px 24px rgba(0, 158, 224, 0.45);
     transform: translateY(-2px);
   }
 
