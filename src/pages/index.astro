@@ -21,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Eyebrow -->
       <p class="hero__eyebrow">
         <span class="hero__eyebrow-dot"></span>
-        Fabricant · Paris &amp; Île-de-France
+        Fabrication &amp; installation · Paris &amp; Île-de-France
       </p>
 
       <!-- Main title -->
@@ -130,184 +130,6 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <!-- ══════════════════════════════════════════
-       SERVICES
-  ══════════════════════════════════════════ -->
-  <section class="services" id="services">
-    <div class="services__wrap">
-
-      <div class="services__header reveal">
-        <p class="svc-label">
-          <span class="svc-label-line"></span>
-          Nos services
-          <span class="svc-label-line"></span>
-        </p>
-        <h2 class="svc-title">Ce que nous fabriquons pour vous</h2>
-      </div>
-
-      <!-- ── ROW 1: text left · image right ── -->
-      <div class="svc-row">
-        <div class="svc-row__text fade-up delay-1">
-          <span class="svc-row__ghost">01</span>
-          <p class="svc-row__label"><span class="svc-row__dot"></span>Enseigne</p>
-          <h3 class="svc-row__heading">Enseignes lumineuses &amp; drapeaux</h3>
-          <p class="svc-row__desc">
-            Des enseignes LED, caissons lumineux et drapeaux publicitaires qui
-            attirent l'œil de jour comme de nuit — fabriqués sur mesure dans notre atelier.
-          </p>
-          <ul class="svc-row__details">
-            <li>Enseignes LED basse consommation</li>
-            <li>Caissons lumineux rétroéclairés</li>
-            <li>Enseignes drapeaux et oriflammes</li>
-            <li>Maintenance et dépannage inclus</li>
-          </ul>
-        </div>
-        <div class="svc-row__img slide-from-right">
-          <div class="svc-carousel" data-carousel>
-            <div class="svc-carousel__track">
-              <img src="/ig3.png"   alt="Enseignes lumineuses 1" class="svc-carousel__slide" />
-              <img src="/hold2.png" alt="Enseignes lumineuses 2" class="svc-carousel__slide" />
-              <img src="/ig1.png"   alt="Enseignes lumineuses 3" class="svc-carousel__slide" />
-            </div>
-            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
-            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
-            <div class="svc-carousel__dots">
-              <span class="svc-carousel__dot active"></span>
-              <span class="svc-carousel__dot"></span>
-              <span class="svc-carousel__dot"></span>
-            </div>
-          </div>
-          <div class="svc-row__overlay"></div>
-          <div class="svc-row__corner svc-row__corner--tl">
-            <span class="svc-row__corner-h"></span>
-            <span class="svc-row__corner-v"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 2: image left · text right ── -->
-      <div class="svc-row">
-        <div class="svc-row__img slide-from-left">
-          <div class="svc-carousel" data-carousel>
-            <div class="svc-carousel__track">
-              <img src="/cat2.jpeg"  alt="Service 2 photo 1" class="svc-carousel__slide active" />
-              <img src="/cat21.jpeg" alt="Service 2 photo 2" class="svc-carousel__slide" />
-              <img src="/cat23.jpeg" alt="Service 2 photo 3" class="svc-carousel__slide" style="object-position: center 15%;" />
-            </div>
-            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
-            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
-            <div class="svc-carousel__dots">
-              <span class="svc-carousel__dot active"></span>
-              <span class="svc-carousel__dot"></span>
-              <span class="svc-carousel__dot"></span>
-            </div>
-          </div>
-          <div class="svc-row__overlay"></div>
-          <div class="svc-row__corner svc-row__corner--tl">
-            <span class="svc-row__corner-h"></span>
-            <span class="svc-row__corner-v"></span>
-          </div>
-        </div>
-        <div class="svc-row__text fade-up delay-1">
-          <span class="svc-row__ghost">02</span>
-          <p class="svc-row__label"><span class="svc-row__dot"></span>Store</p>
-          <h3 class="svc-row__heading">Stores bannes sur mesure</h3>
-          <p class="svc-row__desc">
-            Motorisés ou manuels, nos stores bannes protègent votre vitrine tout en
-            affirmant l'identité de votre commerce.
-          </p>
-          <ul class="svc-row__details">
-            <li>Stores bannes motorisés</li>
-            <li>Marquage et impression sur toile</li>
-            <li>Marquises et auvents</li>
-            <li>Entretien et remplacement de toile</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ── ROW 3: text left · image right ── -->
-      <div class="svc-row">
-        <div class="svc-row__text fade-up delay-1">
-          <span class="svc-row__ghost">03</span>
-          <p class="svc-row__label"><span class="svc-row__dot"></span>Marquage</p>
-          <h3 class="svc-row__heading">Marquage adhésif</h3>
-          <p class="svc-row__desc">
-            Vitrines, véhicules, panneaux publicitaires — le marquage adhésif haute
-            qualité qui fait parler de vous partout où vous allez.
-          </p>
-          <ul class="svc-row__details">
-            <li>Covering et lettrage véhicules</li>
-            <li>Vitrophanie et décoration vitrine</li>
-            <li>Panneaux et supports publicitaires</li>
-            <li>Découpe numérique sur mesure</li>
-          </ul>
-        </div>
-        <div class="svc-row__img slide-from-right">
-          <div class="svc-carousel" data-carousel>
-            <div class="svc-carousel__track">
-              <img src="/marq1.jpeg" alt="Service 3 photo 1" class="svc-carousel__slide active" />
-              <img src="/marq2.jpeg" alt="Service 3 photo 2" class="svc-carousel__slide" />
-              <img src="/marq3.jpeg" alt="Service 3 photo 3" class="svc-carousel__slide" />
-            </div>
-            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
-            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
-            <div class="svc-carousel__dots">
-              <span class="svc-carousel__dot active"></span>
-              <span class="svc-carousel__dot"></span>
-              <span class="svc-carousel__dot"></span>
-            </div>
-          </div>
-          <div class="svc-row__overlay"></div>
-          <div class="svc-row__corner svc-row__corner--tl">
-            <span class="svc-row__corner-h"></span>
-            <span class="svc-row__corner-v"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── ROW 4: image left · text right ── -->
-      <div class="svc-row svc-row--last">
-        <div class="svc-row__img slide-from-left">
-          <div class="svc-carousel" data-carousel>
-            <div class="svc-carousel__track">
-              <img src="/cat1.jpeg"  alt="Création sur mesure 1" class="svc-carousel__slide" />
-              <img src="/cat41.png"  alt="Création sur mesure 2" class="svc-carousel__slide" />
-              <img src="/cat42.png"  alt="Création sur mesure 3" class="svc-carousel__slide" />
-            </div>
-            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
-            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
-            <div class="svc-carousel__dots">
-              <span class="svc-carousel__dot active"></span>
-              <span class="svc-carousel__dot"></span>
-              <span class="svc-carousel__dot"></span>
-            </div>
-          </div>
-          <div class="svc-row__overlay"></div>
-          <div class="svc-row__corner svc-row__corner--tl">
-            <span class="svc-row__corner-h"></span>
-            <span class="svc-row__corner-v"></span>
-          </div>
-        </div>
-        <div class="svc-row__text fade-up delay-1">
-          <span class="svc-row__ghost">04</span>
-          <p class="svc-row__label"><span class="svc-row__dot"></span>Sur mesure</p>
-          <h3 class="svc-row__heading">Création &amp; pose sur mesure</h3>
-          <p class="svc-row__desc">
-            De la conception à la pose, nous gérons l'intégralité de votre projet —
-            un seul interlocuteur, de la conception à la livraison.
-          </p>
-          <ul class="svc-row__details">
-            <li>Conception graphique incluse</li>
-            <li>Fabrication en atelier propre</li>
-            <li>Pose par notre équipe qualifiée</li>
-            <li>Accompagnement administratif</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════
        BEFORE / AFTER
   ══════════════════════════════════════════ -->
   <section class="ba">
@@ -321,17 +143,14 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Pair 1 — drag slider -->
       <div class="bslider reveal">
-        <!-- After (base layer, always full width) -->
         <div class="bslider__layer bslider__layer--after">
           <img src="/after.jpeg" alt="Après" />
           <span class="bslider__tag bslider__tag--after">Après</span>
         </div>
-        <!-- Before (clipped layer on top) -->
         <div class="bslider__layer bslider__layer--before">
           <img src="/before.jpeg" alt="Avant" />
           <span class="bslider__tag">Avant</span>
         </div>
-        <!-- Drag handle -->
         <div class="bslider__handle">
           <div class="bslider__btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -342,7 +161,6 @@ import Layout from '../layouts/Layout.astro';
             </svg>
           </div>
         </div>
-        <!-- Hint -->
         <p class="bslider__hint">Glissez pour comparer</p>
       </div>
 
@@ -408,6 +226,186 @@ import Layout from '../layouts/Layout.astro';
           <polyline points="12 5 19 12 12 19"/>
         </svg>
       </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="services__wrap">
+
+      <div class="services__header reveal">
+        <p class="svc-label">
+          <span class="svc-label-line"></span>
+          Nos services
+          <span class="svc-label-line"></span>
+        </p>
+        <h2 class="svc-title">Ce que nous fabriquons pour vous</h2>
+      </div>
+
+      <!-- ── ROW 1: text left · image right ── -->
+      <div class="svc-row">
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">01</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Enseigne</p>
+          <h3 class="svc-row__heading">Enseignes lumineuses &amp; drapeaux</h3>
+          <p class="svc-row__desc">
+            Des enseignes LED, caissons lumineux et drapeaux publicitaires qui
+            attirent l'œil de jour comme de nuit — fabriqués sur mesure dans notre atelier.
+          </p>
+          <ul class="svc-row__details">
+            <li>Enseignes LED basse consommation</li>
+            <li>Caissons lumineux rétroéclairés</li>
+            <li>Enseignes drapeaux et oriflammes</li>
+            <li>Maintenance et dépannage inclus</li>
+          </ul>
+        </div>
+        <div class="svc-row__img slide-from-right">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/abtus.jpeg" alt="Enseignes lumineuses 1" class="svc-carousel__slide" />
+              <img src="/cat2.jpeg" alt="Enseignes lumineuses 2" class="svc-carousel__slide" />
+              <img src="/cat21.jpeg" alt="Enseignes lumineuses 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 2: image left · text right ── -->
+      <div class="svc-row">
+        <div class="svc-row__img slide-from-left">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/drap1.jpeg" alt="Service 2 photo 1" class="svc-carousel__slide active" />
+              <img src="/drap2.jpeg" alt="Service 2 photo 2" class="svc-carousel__slide" />
+              <img src="/drap3.jpeg" alt="Service 2 photo 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">02</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Store</p>
+          <h3 class="svc-row__heading">Stores bannes sur mesure</h3>
+          <p class="svc-row__desc">
+            Motorisés ou manuels, nos stores bannes protègent votre vitrine tout en
+            affirmant l'identité de votre commerce.
+          </p>
+          <ul class="svc-row__details">
+            <li>Stores bannes motorisés</li>
+            <li>Marquage et impression sur toile</li>
+            <li>Marquises et auvents</li>
+            <li>Entretien et remplacement de toile</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ── ROW 3: text left · image right ── -->
+      <div class="svc-row">
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">03</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Marquage</p>
+          <h3 class="svc-row__heading">Marquage adhésif</h3>
+          <p class="svc-row__desc">
+            Vitrines, véhicules, panneaux publicitaires — le marquage adhésif haute
+            qualité qui fait parler de vous partout où vous allez.
+          </p>
+          <ul class="svc-row__details">
+            <li>Covering et lettrage véhicules</li>
+            <li>Vitrophanie et décoration vitrine</li>
+            <li>Panneaux et supports publicitaires</li>
+            <li>Découpe numérique sur mesure</li>
+          </ul>
+        </div>
+        <div class="svc-row__img slide-from-right">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/marq1.jpeg" alt="Service 3 photo 1" class="svc-carousel__slide active" />
+              <img src="/marq2.jpeg" alt="Service 3 photo 2" class="svc-carousel__slide" />
+              <img src="/marq3.jpeg" alt="Service 3 photo 3" class="svc-carousel__slide" />
+              <img src="/cat23.jpeg" alt="Service 3 photo 4" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 4: image left · text right ── -->
+      <div class="svc-row svc-row--last">
+        <div class="svc-row__img slide-from-left">
+          <div class="svc-carousel" data-carousel>
+            <div class="svc-carousel__track">
+              <img src="/cat1.jpeg"  alt="Création sur mesure 1" class="svc-carousel__slide" />
+              <img src="/cat41.png"  alt="Création sur mesure 2" class="svc-carousel__slide" />
+              <img src="/cat42.png"  alt="Création sur mesure 3" class="svc-carousel__slide" />
+            </div>
+            <button class="svc-carousel__btn svc-carousel__btn--prev" aria-label="Précédent">&#8249;</button>
+            <button class="svc-carousel__btn svc-carousel__btn--next" aria-label="Suivant">&#8250;</button>
+            <div class="svc-carousel__dots">
+              <span class="svc-carousel__dot active"></span>
+              <span class="svc-carousel__dot"></span>
+              <span class="svc-carousel__dot"></span>
+            </div>
+          </div>
+          <div class="svc-row__overlay"></div>
+          <div class="svc-row__corner svc-row__corner--tl">
+            <span class="svc-row__corner-h"></span>
+            <span class="svc-row__corner-v"></span>
+          </div>
+        </div>
+        <div class="svc-row__text fade-up delay-1">
+          <span class="svc-row__ghost">04</span>
+          <p class="svc-row__label"><span class="svc-row__dot"></span>Sur mesure</p>
+          <h3 class="svc-row__heading">Création &amp; pose sur mesure</h3>
+          <p class="svc-row__desc">
+            De la conception à la pose, nous gérons l'intégralité de votre projet —
+            un seul interlocuteur, de la conception à la livraison.
+          </p>
+          <ul class="svc-row__details">
+            <li>Conception graphique incluse</li>
+            <li>Fabrication en atelier propre</li>
+            <li>Pose par notre équipe qualifiée</li>
+            <li>Accompagnement administratif</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -879,14 +877,20 @@ import Layout from '../layouts/Layout.astro';
   .hero__eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.55rem;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
-    color: var(--gold);
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1.75rem;
+    padding: 0.45rem 1rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .hero__eyebrow-dot {
