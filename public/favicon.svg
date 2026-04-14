@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#31559F"/>
+  <!-- M mark (scaled from navbar logo, centered) -->
+  <g transform="translate(6, 4) scale(1.0)">
+    <polygon points="0,24 3.5,24 3.5,4.5 0,0"     fill="#009EE0"/>
+    <polygon points="3.5,4.5 8.5,13 6,13 1.5,4.5"  fill="#009EE0" opacity="0.8"/>
+    <polygon points="8.5,13 13.5,4.5 16,4.5 11,13" fill="#009EE0" opacity="0.8"/>
+    <polygon points="13.5,4.5 17,0 17,24 13.5,24"  fill="#009EE0"/>
+    <line x1="0" y1="27" x2="17" y2="27" stroke="#009EE0" stroke-width="1" opacity="0.4"/>
+  </g>
+</svg>
