@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="hero">
 
     <!-- Full-bleed background image -->
-    <img src="/herobg2.jpeg" alt="" class="hero__bg" aria-hidden="true" />
+    <img src="/herobg.png" alt="" class="hero__bg" aria-hidden="true" />
 
     <!-- Dark gradient overlay -->
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -90,41 +90,49 @@ import Layout from '../layouts/Layout.astro';
        TRUST BAR
   ══════════════════════════════════════════ -->
   <div class="trust-bar">
-    <div class="trust-bar__wrap">
-      <div class="trust-bar__item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="var(--gold)" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        Fabrication locale — atelier en IDF
-      </div>
-      <span class="trust-bar__sep"></span>
-      <div class="trust-bar__item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="var(--gold)" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        Pose incluse, aucun sous-traitant
-      </div>
-      <span class="trust-bar__sep"></span>
-      <div class="trust-bar__item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="var(--gold)" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        Devis gratuit sous 24h
-      </div>
-      <span class="trust-bar__sep"></span>
-      <div class="trust-bar__item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="var(--gold)" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        Tous types de commerces
+    <div class="trust-bar__track">
+      <div class="trust-bar__reel">
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Fabrication locale — atelier en IDF
+        </div>
+        <span class="trust-bar__sep"></span>
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Pose incluse, aucun sous-traitant
+        </div>
+        <span class="trust-bar__sep"></span>
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Devis gratuit sous 24h
+        </div>
+        <span class="trust-bar__sep"></span>
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Tous types de commerces
+        </div>
+        <span class="trust-bar__sep"></span>
+        <!-- duplicate for seamless loop -->
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Fabrication locale — atelier en IDF
+        </div>
+        <span class="trust-bar__sep"></span>
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Pose incluse, aucun sous-traitant
+        </div>
+        <span class="trust-bar__sep"></span>
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Devis gratuit sous 24h
+        </div>
+        <span class="trust-bar__sep"></span>
+        <div class="trust-bar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Tous types de commerces
+        </div>
+        <span class="trust-bar__sep"></span>
       </div>
     </div>
   </div>
@@ -406,6 +414,204 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GOOGLE REVIEWS
+  ══════════════════════════════════════════ -->
+  <section class="reviews">
+    <div class="reviews__wrap">
+      <div class="reviews__header reveal">
+        <div class="reviews__google-badge">
+          <svg class="reviews__google-icon" width="22" height="22" viewBox="0 0 24 24">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          <span class="reviews__google-text">Google Reviews</span>
+        </div>
+        <p class="reviews__label">
+          <span class="reviews__label-line"></span>
+          Avis clients
+          <span class="reviews__label-line"></span>
+        </p>
+        <h2 class="reviews__title">Ce que nos clients disent de nous</h2>
+        <div class="reviews__summary">
+          <span class="reviews__avg">4.5</span>
+          <div class="reviews__avg-stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24"><defs><linearGradient id="hstar"><stop offset="50%" stop-color="#FBBC05"/><stop offset="50%" stop-color="#D1D5DB"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z" fill="url(#hstar)"/></svg>
+          </div>
+          <span class="reviews__count">basé sur 87 avis</span>
+        </div>
+      </div>
+
+      <div class="reviews__slider" data-rv-slider>
+        <button class="reviews__arrow reviews__arrow--prev" aria-label="Avis précédent">&#8249;</button>
+
+        <div class="reviews__track">
+
+          <!-- 1 — 5 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">K</div>
+              <div>
+                <p class="rv-card__name">Karim B.</p>
+                <p class="rv-card__date">Il y a 2 semaines</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Enseigne posée en 3 jours pour mon resto. Le rendu est top, merci l'équipe !</p>
+          </div>
+
+          <!-- 2 — 4 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">S</div>
+              <div>
+                <p class="rv-card__name">Sophie M.</p>
+                <p class="rv-card__date">Il y a 1 mois</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#D1D5DB"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Très pro, design proposé et posé dans la semaine pour mon salon. Délai de fab un peu long sinon rien à dire.</p>
+          </div>
+
+          <!-- 3 — 4.5 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">N</div>
+              <div>
+                <p class="rv-card__name">Nathalie D.</p>
+                <p class="rv-card__date">Il y a 2 mois</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24"><defs><linearGradient id="hs2"><stop offset="50%" stop-color="#FBBC05"/><stop offset="50%" stop-color="#D1D5DB"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z" fill="url(#hs2)"/></svg>
+            </div>
+            <p class="rv-card__text">Marquage vitrine pour ma boutique, charte graphique respectée à la lettre. Par téléphone c'est instantané.</p>
+          </div>
+
+          <!-- 4 — 4 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">A</div>
+              <div>
+                <p class="rv-card__name">Abdel R.</p>
+                <p class="rv-card__date">Il y a 3 semaines</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#D1D5DB"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Caisson lumineux + store banne pour mon kebab. Nickel et pas cher pour la qualité.</p>
+          </div>
+
+          <!-- 5 — 4 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">M</div>
+              <div>
+                <p class="rv-card__name">Mehdi K.</p>
+                <p class="rv-card__date">Il y a 1 semaine</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#D1D5DB"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Covering utilitaire, 2e fois que je fais appel. Travail propre et rapide.</p>
+          </div>
+
+          <!-- 6 — 3.5 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">L</div>
+              <div>
+                <p class="rv-card__name">Linda T.</p>
+                <p class="rv-card__date">Il y a 3 mois</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24"><defs><linearGradient id="hs3"><stop offset="50%" stop-color="#FBBC05"/><stop offset="50%" stop-color="#D1D5DB"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z" fill="url(#hs3)"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#D1D5DB"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Store banne pour ma pharmacie. Petit souci de mesure corrigé sans frais, au final c'est bien.</p>
+          </div>
+
+          <!-- 7 — 4 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">Y</div>
+              <div>
+                <p class="rv-card__name">Youssef A.</p>
+                <p class="rv-card__date">Il y a 5 jours</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#D1D5DB"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Enseigne + stickers vitrine pour mon snack. Prix honnête, je recommande.</p>
+          </div>
+
+          <!-- 8 — 3.5 stars -->
+          <div class="rv-card">
+            <div class="rv-card__head">
+              <div class="rv-card__avatar">C</div>
+              <div>
+                <p class="rv-card__name">Claire V.</p>
+                <p class="rv-card__date">Il y a 1 mois</p>
+              </div>
+            </div>
+            <div class="rv-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24"><defs><linearGradient id="hs4"><stop offset="50%" stop-color="#FBBC05"/><stop offset="50%" stop-color="#D1D5DB"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z" fill="url(#hs4)"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#D1D5DB"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            </div>
+            <p class="rv-card__text">Vitrophanie pour mon institut de beauté. Le graphiste a bien compris ce que je voulais, résultat élégant.</p>
+          </div>
+
+        </div>
+
+        <button class="reviews__arrow reviews__arrow--next" aria-label="Avis suivant">&#8250;</button>
+      </div>
     </div>
   </section>
 
@@ -843,13 +1049,12 @@ import Layout from '../layouts/Layout.astro';
 
   .hero__bg {
     position: absolute;
-    inset: -8px; /* slightly oversized so blur edges don't show */
-    width: calc(100% + 16px);
-    height: calc(100% + 16px);
+    inset: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     z-index: 0;
-    filter: blur(5px);
   }
 
   .hero__overlay {
@@ -1052,26 +1257,43 @@ import Layout from '../layouts/Layout.astro';
     background: var(--bg-soft);
     border-top: 1px solid rgba(0, 180, 245, 0.1);
     border-bottom: 1px solid rgba(0, 180, 245, 0.1);
-    padding: 1rem 2rem;
+    padding: 0.9rem 0;
+    overflow: hidden;
   }
 
-  .trust-bar__wrap {
-    max-width: 1200px;
-    margin: 0 auto;
+  .trust-bar__track {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+
+  .trust-bar__reel {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap;
+    white-space: nowrap;
+    animation: trustScroll 18s linear infinite;
+    flex-shrink: 0;
+    padding-right: 1.5rem;
   }
 
+  @keyframes trustScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .trust-bar__reel:hover { animation-play-state: paused; }
+
   .trust-bar__item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.45rem;
     font-size: 0.79rem;
     font-weight: 500;
     color: var(--muted);
+    flex-shrink: 0;
   }
 
   .trust-bar__sep {
@@ -1721,6 +1943,195 @@ import Layout from '../layouts/Layout.astro';
     .bslider   { aspect-ratio: 4 / 3; }
   }
 
+  /* ── REVIEWS ────────────────────────────────── */
+  .reviews {
+    background: var(--bg-soft);
+    padding: 6rem 2rem;
+    border-top: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .reviews__wrap { max-width: 1200px; margin: 0 auto; }
+
+  .reviews__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .reviews__google-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .reviews__google-icon { flex-shrink: 0; }
+
+  .reviews__google-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .reviews__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .reviews__label-line {
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .reviews__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+  }
+
+  .reviews__summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .reviews__avg {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+  }
+
+  .reviews__avg-stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  .reviews__count {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .reviews__slider {
+    position: relative;
+  }
+
+  .reviews__track {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0.5rem 0;
+    mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+  }
+  .reviews__track::-webkit-scrollbar { display: none; }
+
+  .rv-card {
+    flex-shrink: 0;
+    width: 320px;
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .rv-card:hover {
+    border-color: var(--navy);
+    box-shadow: 0 4px 18px rgba(49,85,159,0.08);
+  }
+
+  .reviews__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background: white;
+    color: var(--navy);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    z-index: 2;
+    line-height: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .reviews__arrow:hover {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+  }
+  .reviews__arrow--prev { left: -20px; }
+  .reviews__arrow--next { right: -20px; }
+
+  .rv-card__head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .rv-card__avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .rv-card__name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .rv-card__date {
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  .rv-card__stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 0.65rem;
+  }
+
+  .rv-card__text {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
   /* ── PROCESS ────────────────────────────────── */
   .process {
     background: var(--bg);
@@ -1879,8 +2290,7 @@ import Layout from '../layouts/Layout.astro';
     .hero__stat-num { font-size: 1.25rem; }
     .hero__scroll  { display: none; }
 
-    .trust-bar__sep  { display: none; }
-    .trust-bar__wrap { flex-direction: column; gap: 0.6rem; align-items: flex-start; padding: 0 0.5rem; }
+    .trust-bar__reel { animation-duration: 12s; }
 
     .services        { padding: 4rem 1.5rem; }
     .svc-row         { grid-template-columns: 1fr; gap: 0; margin-bottom: 4rem; }
@@ -1904,6 +2314,13 @@ import Layout from '../layouts/Layout.astro';
     .process__step   { text-align: left; padding: 0; }
     .process__icon   { margin: 0 0 0.75rem; }
     .process__body   { max-width: none; margin: 0; }
+
+    .reviews              { padding: 4rem 1.25rem; }
+    .reviews__title       { font-size: 1.5rem; }
+    .reviews__arrow--prev { left: -6px; }
+    .reviews__arrow--next { right: -6px; }
+    .reviews__arrow       { width: 34px; height: 34px; font-size: 1.2rem; }
+    .rv-card              { width: 280px; padding: 1.25rem; }
 
     .gallery         { padding: 4rem 1.25rem; }
     .gallery__grid   { grid-template-columns: 1fr 1fr; }
@@ -2234,4 +2651,44 @@ import Layout from '../layouts/Layout.astro';
       }
     });
   });
+
+  // Reviews: auto-scroll with pause on touch/hover + arrow buttons
+  (() => {
+    const slider = document.querySelector('[data-rv-slider]');
+    if (!slider) return;
+    const track = slider.querySelector('.reviews__track');
+    const prevBtn = slider.querySelector('.reviews__arrow--prev');
+    const nextBtn = slider.querySelector('.reviews__arrow--next');
+    let paused = false;
+    let jumping = false;
+    const speed = 0.5;
+
+    function step() {
+      if (!paused && !jumping) {
+        track.scrollLeft += speed;
+        if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 1) {
+          track.scrollLeft = 0;
+        }
+      }
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+
+    track.addEventListener('mouseenter', () => paused = true);
+    track.addEventListener('mouseleave', () => paused = false);
+    track.addEventListener('touchstart', () => paused = true, { passive: true });
+    track.addEventListener('touchend', () => paused = false);
+
+    const cardW = 320 + 20;
+    function jumpTo(dir) {
+      jumping = true;
+      const idx = Math.round(track.scrollLeft / cardW) + dir;
+      const target = Math.max(0, idx * cardW);
+      track.scrollTo({ left: target, behavior: 'smooth' });
+      setTimeout(() => { jumping = false; }, 500);
+    }
+
+    prevBtn.addEventListener('click', () => jumpTo(-1));
+    nextBtn.addEventListener('click', () => jumpTo(1));
+  })();
 </script>
